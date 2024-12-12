@@ -2,7 +2,7 @@
 import User from "@/modals/user.modal";
 import { connect } from "@/db"
 
-export async function createUser(user: any) {
+export async function createUser(user: unknown) {
   try {
     await connect();
     const newUser = await User.create(user);
