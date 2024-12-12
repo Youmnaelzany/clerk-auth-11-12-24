@@ -25,7 +25,11 @@ export const UserSchema = new Schema({
   },  
   image: {
     type: String,
-  }
+  },
+  createdAt: {
+    type: Date,
+    required: true,
+  },
 
 });
 
